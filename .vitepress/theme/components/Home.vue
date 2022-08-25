@@ -13,8 +13,10 @@ onMounted(async () => {
 <template>
   <section id="hero">
     <h1 class="tagline">
-      <span class="accent">以无法为有法，以无限为有限</span>
-      <br />以至武功最高境界
+      <span class="accent"
+        >Using no way as way; having no limitation as limitation.</span
+      >
+      <br />
     </h1>
     <p class="description"></p>
   </section>
