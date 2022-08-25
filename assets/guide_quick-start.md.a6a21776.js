@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as e,a as r}from"./app.b24064fa.js";const s='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/quick-start.md"}',i={},n=[r("p",null,"queueMicrotask",-1)];var o=t(i,[["render",function(t,r,s,i,o,u){return a(),e("div",null,n)}]]);export{s as __pageData,o as default};
