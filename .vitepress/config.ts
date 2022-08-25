@@ -30,6 +30,18 @@ export const sidebar = {
         {
           text: 'pnpm',
           link: '/engineering/pnpm'
+        },
+        {
+          text: 'vite',
+          link: '/engineering/vite'
+        },
+        {
+          text: 'bun',
+          link: '/engineering/bun'
+        },
+        {
+          text: 'ski',
+          link: '/engineering/ski'
         }
       ]
     }
