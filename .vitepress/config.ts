@@ -1,140 +1,68 @@
-import fs from 'fs'
-import path from 'path'
-import { defineConfigWithTheme } from 'vitepress'
-import type { Config as ThemeConfig } from '@vue/theme'
-import baseConfig from '@vue/theme/config'
-import { headerPlugin } from './headerMdPlugin'
-
+import { defineConfig } from "vitepress";
+import { version } from "../package.json";
 const nav = [
   {
-    text: '文档',
+    text: "FrontEnd",
     activeMatch: `^/(engineering|style-guide|cookbook|examples)/`,
-    link: '/engineering/prettier'
-  }
-]
-
+    link: "/engineering/prettier",
+  },
+];
 export const sidebar = {
-  '/engineering/': [
+  "/engineering/": [
     {
-      text: 'Compiler',
+      text: "前端工程化",
+      collapsible: true,
       items: [
-        { text: 'stylelint', link: '/engineering/stylelint' },
+        { text: "stylelint", link: "/engineering/stylelint" },
         {
-          text: 'prettier',
-          link: '/engineering/prettier'
+          text: "prettier",
+          link: "/engineering/prettier",
         },
         {
-          text: 'pnpm',
-          link: '/engineering/pnpm'
+          text: "pnpm",
+          link: "/engineering/pnpm",
         },
         {
-          text: 'pnpm',
-          link: '/engineering/pnpm'
+          text: "vite",
+          link: "/engineering/vite",
         },
         {
-          text: 'vite',
-          link: '/engineering/vite'
+          text: "bun",
+          link: "/engineering/bun",
         },
         {
-          text: 'bun',
-          link: '/engineering/bun'
+          text: "ski",
+          link: "/engineering/ski",
         },
-        {
-          text: 'ski',
-          link: '/engineering/ski'
-        }
-      ]
-    }
-  ]
-}
-
-export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig,
-  lang: 'zh-CN',
-  srcDir: 'docs',
-  srcExclude: ['tutorial/**/description.md'],
-  scrollOffset: 'header',
-  base: '/gitDocs/',
-  head: [
-    ['meta', { name: 'theme-color', content: '#3c8772' }],
-    ['meta', { name: 'twitter:site', content: '@vuejs' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
-
-    [
-      'script',
-      {},
-      fs.readFileSync(
-        path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
-        'utf-8'
-      )
-    ],
-    [
-      'script',
-      {
-        src: 'https://cdn.usefathom.com/script.js',
-        'data-site': 'ZPMMDSYA',
-        'data-spa': 'auto',
-        defer: ''
-      }
-    ]
+      ],
+    },
   ],
+};
+export default defineConfig({
+  lang: "en-US",
+  title: "DOCS",
+  description: "docs tree.",
+
+  lastUpdated: true,
+  cleanUrls: "without-subfolders",
+
   themeConfig: {
     nav,
+
     sidebar,
+
+    editLink: {
+      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
+    },
+
+    socialLinks: [
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
     algolia: {
-      indexName: 'vuejs_cn2',
-      appId: 'UURH1MHAF7',
-      apiKey: 'c23eb8e7895f42daeaf2bf6f63eb4bf6',
-      searchParameters: {
-        facetFilters: ['version:v3']
-      }
+      appId: "8J64VVRP8K",
+      apiKey: "a18e2f4cc5665f6602c5631fd868adfd",
+      indexName: "vitepress",
     },
-
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/' }],
-    footer: {
-      license: {
-        text: '版权声明',
-        link: 'https://github.com/vuejs-translations/docs-zh-cn#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E'
-      },
-      copyright: `本中文文档内容版权为幽州胖都督，保留所有权利。`
-    }
   },
-
-  markdown: {
-    config(md) {
-      md.use(headerPlugin)
-    }
-  },
-
-  vite: {
-    define: {
-      __VUE_OPTIONS_API__: false
-    },
-    optimizeDeps: {
-      include: ['gsap', 'dynamics.js'],
-      exclude: ['@vue/repl']
-    },
-    // @ts-ignore
-    ssr: {
-      external: ['@vue/repl']
-    },
-    server: {
-      host: true,
-      fs: {
-        // for when developing with locally linked theme
-        allow: ['../..']
-      }
-    },
-    build: {
-      minify: 'terser',
-      chunkSizeWarningLimit: Infinity
-    },
-    json: {
-      stringify: true
-    }
-  },
-
-  vue: {
-    reactivityTransform: true
-  }
-})
+});

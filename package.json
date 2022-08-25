@@ -3,6 +3,7 @@
     "node": ">=14.0.0",
     "pnpm": ">=7.4.0"
   },
+  "version": "1.0.0",
   "scripts": {
     "start": "vitepress",
     "build": "vitepress build",
@@ -13,23 +14,10 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "@vue/repl": "^1.2.4",
-    "@vue/theme": "^1.1.0",
-    "dynamics.js": "^1.1.5",
-    "gsap": "^3.9.0",
-    "vitepress": "^0.22.4",
+    "vitepress": "^1.0.0-alpha.10",
     "vue": "^3.2.37"
   },
-  "devDependencies": {
-    "@types/markdown-it": "^12.2.3",
-    "@types/node": "^16.9.1",
-    "chalk": "^4.1.2",
-    "gray-matter": "^4.0.3",
-    "lodash": "^4.17.21",
-    "open": "^8.4.0",
-    "simple-git": "^2.48.0",
-    "zhlint": "^0.6.1"
-  },
+  "devDependencies": {},
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
