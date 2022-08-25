@@ -4,7 +4,7 @@ const nav = [
   {
     text: "FrontEnd",
     activeMatch: `^/(engineering|style-guide|cookbook|examples)/`,
-    link: "/engineering/prettier",
+    link: "/engineering/stylelint",
   },
 ];
 export const sidebar = {
@@ -40,7 +40,7 @@ export const sidebar = {
 };
 export default defineConfig({
   lang: "en-US",
-  title: "DOCS",
+  title: "TREEDOCS",
   description: "docs tree.",
 
   lastUpdated: true,
