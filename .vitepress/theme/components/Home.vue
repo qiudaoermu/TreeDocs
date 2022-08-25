@@ -6,7 +6,7 @@ import { load, data, base } from './sponsors'
 // import VueMasteryModal from './VueMasteryModal.vue';
 
 onMounted(async () => {
-  await load()
+  await load();
 })
 </script>
 

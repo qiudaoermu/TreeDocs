@@ -74,7 +74,6 @@ export default defineConfigWithTheme<ThemeConfig>({
       }
     ]
   ],
-
   themeConfig: {
     nav,
     sidebar,
@@ -104,13 +103,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       text: '在 GitHub 上编辑此页'
     },
 
-    footer: {
-      license: {
-        text: '版权声明',
-        link: 'https://github.com/vuejs-translations/docs-zh-cn#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E'
-      },
-      copyright: `本中文文档内容版权为 Vue 官方团队及翻译贡献者所有，保留所有权利。`
-    }
+   
   },
 
   markdown: {
