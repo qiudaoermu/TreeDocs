@@ -13,31 +13,10 @@ onMounted(async () => {
 <template>
   <section id="hero">
     <h1 class="tagline">
-      <span class="accent">渐进式</span>
-      <br />JavaScript 框架
+      <span class="accent">以无法为有法，以无限为有限</span>
+      <br />以至武功最高境界
     </h1>
-    <p class="description">
-      易学易用，性能出色，适用场景丰富的 Web 前端框架。
-    </p>
-    <p class="actions">
-      <!-- NOTE: hide the home video -->
-      <!-- <vue-mastery-modal /> -->
-      <a class="get-started" href="/guide/introduction.html">
-        快速上手
-        <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="10"
-          height="10"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
-          />
-        </svg>
-      </a>
-      <a class="setup" href="/guide/quick-start.html">安装</a>
-    </p>
+    <p class="description"></p>
   </section>
 </template>
 
@@ -59,7 +38,6 @@ section {
   line-height: 1.25;
   font-weight: 900;
   letter-spacing: -1.5px;
-  max-width: 960px;
   margin: 0px auto;
 }
 
