@@ -45,7 +45,7 @@ export default defineConfig({
 
   lastUpdated: true,
   cleanUrls: "without-subfolders",
-
+  base: "/gitDocs/",
   themeConfig: {
     nav,
 
