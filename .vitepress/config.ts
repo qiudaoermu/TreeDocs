@@ -22,6 +22,14 @@ export const sidebar = {
         {
           text: 'prettier',
           link: '/engineering/prettier'
+        },
+        {
+          text: 'pnpm',
+          link: '/engineering/pnpm'
+        },
+        {
+          text: 'pnpm',
+          link: '/engineering/pnpm'
         }
       ]
     }
