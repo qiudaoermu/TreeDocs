@@ -8,20 +8,20 @@ import { headerPlugin } from './headerMdPlugin'
 const nav = [
   {
     text: '文档',
-    activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
-    link: '/guide/quick-start'
+    activeMatch: `^/(engineering|style-guide|cookbook|examples)/`,
+    link: '/engineering/prettier'
   }
 ]
 
 export const sidebar = {
-  '/guide/': [
+  '/engineering/': [
     {
-      text: '开始',
+      text: 'Compiler',
       items: [
-        { text: '简介', link: '/guide/introduction' },
+        { text: 'stylelint', link: '/engineering/stylelint' },
         {
-          text: '快速上手',
-          link: '/guide/quick-start'
+          text: 'prettier',
+          link: '/engineering/prettier'
         }
       ]
     }
@@ -37,7 +37,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   srcDir: 'docs',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
-  base: '/vuepress-tree/',
+  base: '/gitDocs/',
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { name: 'twitter:site', content: '@vuejs' }],

@@ -11,9 +11,9 @@ import {
 
 const route = useRoute()
 const show = $computed(() =>
-  /^\/(guide|tutorial|examples)\//.test(route.path)
+  /^\/(engineering|tutorial|examples)\//.test(route.path)
 )
-const showSFC = $computed(() => !/^\/guide/.test(route.path))
+const showSFC = $computed(() => !/^\/engineering/.test(route.path))
 
 let isOpen = $ref(true)
 
@@ -57,9 +57,7 @@ function useToggleFn(
 }
 </script>
 
-<template>
-
-</template>
+<template></template>
 
 <style scoped>
 .preference-switch {
@@ -151,11 +149,11 @@ function useToggleFn(
     font-size: 11px;
     padding: 8px 4px;
   }
-  
+
   .vt-switch {
     margin: auto;
   }
-  
+
   .switch-link {
     margin-left: auto;
   }

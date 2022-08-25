@@ -4,7 +4,7 @@
     "pnpm": ">=7.4.0"
   },
   "scripts": {
-    "dev": "vitepress",
+    "start": "vitepress",
     "build": "vitepress build",
     "serve": "vitepress serve",
     "zhlint": "zhlint 'src/{api,about,guide,sponsor,translations,tutorial}/**/*.md'",
