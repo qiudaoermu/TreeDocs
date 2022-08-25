@@ -30,10 +30,7 @@ export const sidebar = {
 
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
-
   lang: 'zh-CN',
-  title: 'Vue.js',
-  description: 'Vue.js - 渐进式的 JavaScript 框架',
   srcDir: 'docs',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
@@ -42,20 +39,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { name: 'twitter:site', content: '@vuejs' }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
-    [
-      'meta',
-      {
-        name: 'twitter:image',
-        content: 'https://vuejs.org/images/logo.png'
-      }
-    ],
-    [
-      'link',
-      {
-        rel: 'preconnect',
-        href: 'https://sponsors.vuejs.org'
-      }
-    ],
+
     [
       'script',
       {},
@@ -86,24 +70,14 @@ export default defineConfigWithTheme<ThemeConfig>({
       }
     },
 
-    // carbonAds: {
-    //   code: 'CEBDT27Y',
-    //   placement: 'vuejsorg'
-    // },
-
-    socialLinks: [
-      { icon: 'languages', link: '/translations/' },
-      { icon: 'github', link: 'https://github.com/vuejs/' },
-      { icon: 'twitter', link: 'https://twitter.com/vuejs' },
-      { icon: 'discord', link: 'https://discord.com/invite/HBherRA' }
-    ],
-
-    editLink: {
-      repo: 'vuejs-translations/docs-zh-cn',
-      text: '在 GitHub 上编辑此页'
-    },
-
-   
+    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/' }],
+    footer: {
+      license: {
+        text: '版权声明',
+        link: 'https://github.com/vuejs-translations/docs-zh-cn#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E'
+      },
+      copyright: `本中文文档内容版权为幽州胖都督，保留所有权利。`
+    }
   },
 
   markdown: {

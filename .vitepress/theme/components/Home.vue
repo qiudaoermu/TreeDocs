@@ -6,7 +6,7 @@ import { load, data, base } from './sponsors'
 // import VueMasteryModal from './VueMasteryModal.vue';
 
 onMounted(async () => {
-  await load();
+  await load()
 })
 </script>
 
@@ -16,8 +16,12 @@ onMounted(async () => {
       <span class="accent"
         >Using no way as way; having no limitation as limitation.</span
       >
-      <br />
+      <br />to the highest
     </h1>
+    <p class="description">
+      To hounor everyone who never bow to the fate, Don't give up until you
+      get what you want!
+    </p>
     <p class="description"></p>
   </section>
 </template>
