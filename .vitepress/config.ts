@@ -6,6 +6,11 @@ const nav = [
     activeMatch: `^/(engineering|style-guide|cookbook|examples)/`,
     link: "/engineering/stylelint",
   },
+  {
+    text: "编程拾遗",
+    activeMatch: `^/(engineering|style-guide|cookbook|examples)/`,
+    link: "/program/Iterators",
+  },
 ];
 export const sidebar = {
   "/engineering/": [
@@ -17,6 +22,17 @@ export const sidebar = {
         {
           text: "prettier",
           link: "/engineering/prettier",
+          collapsible: true,
+          items: [
+            {
+              text: "vscode",
+              link: "",
+            },
+            {
+              text: "项目配置",
+              link: "",
+            },
+          ],
         },
         {
           text: "pnpm",
@@ -37,7 +53,15 @@ export const sidebar = {
       ],
     },
   ],
+  "/program/": [
+    {
+      text: "编程拾遗",
+      collapsible: true,
+      items: [{ text: "迭代器实现(Iterator)", link: "/program/Iterators" }],
+    },
+  ],
 };
+
 export default defineConfig({
   lang: "en-US",
   title: "TREEDOCS",
