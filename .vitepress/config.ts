@@ -57,7 +57,10 @@ export const sidebar = {
     {
       text: "编程拾遗",
       collapsible: true,
-      items: [{ text: "迭代器实现(Iterator)", link: "/program/Iterators" }],
+      items: [
+        { text: "迭代器实现(Iterator)", link: "/program/Iterators" },
+        { text: "高阶函数(HOT)", link: "/program/hot" },
+      ],
     },
   ],
 };

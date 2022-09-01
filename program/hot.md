@@ -2,7 +2,7 @@
 ## js高阶函数是以函数为参数的函数
 
 ### 实现reduce 
-```
+```js
 Array.prototype.leduce = function (fn,params) {
   let count = 0;
   if (params) {
