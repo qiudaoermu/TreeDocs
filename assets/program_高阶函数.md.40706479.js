@@ -1,0 +1,12 @@
+import{_ as s,c as a,o as n,d as e}from"./app.303a9ab7.js";const u=JSON.parse('{"title":"\u9AD8\u9636\u51FD\u6570","description":"","frontmatter":{},"headers":[{"level":2,"title":"js\u9AD8\u9636\u51FD\u6570\u662F\u4EE5\u51FD\u6570\u4E3A\u53C2\u6570\u7684\u51FD\u6570","slug":"js\u9AD8\u9636\u51FD\u6570\u662F\u4EE5\u51FD\u6570\u4E3A\u53C2\u6570\u7684\u51FD\u6570"},{"level":3,"title":"\u5B9E\u73B0reduce","slug":"\u5B9E\u73B0reduce"}],"relativePath":"program/\u9AD8\u9636\u51FD\u6570.md","lastUpdated":1662010440000}'),l={name:"program/\u9AD8\u9636\u51FD\u6570.md"},t=e(`<h1 id="\u9AD8\u9636\u51FD\u6570" tabindex="-1">\u9AD8\u9636\u51FD\u6570 <a class="header-anchor" href="#\u9AD8\u9636\u51FD\u6570" aria-hidden="true">#</a></h1><h2 id="js\u9AD8\u9636\u51FD\u6570\u662F\u4EE5\u51FD\u6570\u4E3A\u53C2\u6570\u7684\u51FD\u6570" tabindex="-1">js\u9AD8\u9636\u51FD\u6570\u662F\u4EE5\u51FD\u6570\u4E3A\u53C2\u6570\u7684\u51FD\u6570 <a class="header-anchor" href="#js\u9AD8\u9636\u51FD\u6570\u662F\u4EE5\u51FD\u6570\u4E3A\u53C2\u6570\u7684\u51FD\u6570" aria-hidden="true">#</a></h2><h3 id="\u5B9E\u73B0reduce" tabindex="-1">\u5B9E\u73B0reduce <a class="header-anchor" href="#\u5B9E\u73B0reduce" aria-hidden="true">#</a></h3><div class="language-"><button class="copy"></button><span class="lang"></span><pre><code><span class="line"><span style="color:#A6ACCD;">Array.prototype.leduce = function (fn,params) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  let count = 0;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  if (params) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    this.push(params);</span></span>
+<span class="line"><span style="color:#A6ACCD;">  };</span></span>
+<span class="line"><span style="color:#A6ACCD;">  let res = this[count];</span></span>
+<span class="line"><span style="color:#A6ACCD;">  while (++count &lt; this.length) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    res = fn(res, this[count]);</span></span>
+<span class="line"><span style="color:#A6ACCD;">  };</span></span>
+<span class="line"><span style="color:#A6ACCD;">  return res;</span></span>
+<span class="line"><span style="color:#A6ACCD;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div>`,4),p=[t];function r(c,o,i,d,_,h){return n(),a("div",null,p)}const C=s(l,[["render",r]]);export{u as __pageData,C as default};
