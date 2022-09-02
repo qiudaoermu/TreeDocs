@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,d as e}from"./app.612d77b0.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"viewBook/enjoying.md","lastUpdated":1662108518000}'),o={name:"viewBook/enjoying.md"},t=e("",1),c=[t];function p(l,_,r,i,d,A){return a(),n("div",null,c)}const u=s(o,[["render",p]]);export{m as __pageData,u as default};
