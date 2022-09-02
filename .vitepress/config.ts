@@ -3,13 +3,33 @@ import { version } from "../package.json";
 const nav = [
   {
     text: "FrontEnd",
-    activeMatch: `^/(engineering|style-guide|cookbook|examples)/`,
+    activeMatch: `^/engineering/`,
     link: "/engineering/stylelint",
   },
   {
+    text: "BackEnd",
+    activeMatch: `^/(backend)/`,
+    link: "/backend/nodejs",
+  },
+  {
+    text: "Algorithm",
+    activeMatch: `^/Algorithm/`,
+    link: "/Algorithm/dfs",
+  },
+  {
     text: "编程拾遗",
-    activeMatch: `^/(engineering|style-guide|cookbook|examples)/`,
+    activeMatch: `^/program/`,
     link: "/program/Iterators",
+  },
+  {
+    text: "最爱图影",
+    activeMatch: `^/viewBook/`,
+    link: "/viewBook/program",
+  },
+  {
+    text: "金融",
+    activeMatch: `^/financial/`,
+    link: "/financial/bubble",
   },
 ];
 export const sidebar = {
@@ -19,37 +39,27 @@ export const sidebar = {
       collapsible: true,
       items: [
         { text: "stylelint", link: "/engineering/stylelint" },
+        { text: "eslint", link: "/engineering/eslint" },
         {
           text: "prettier",
           link: "/engineering/prettier",
-          collapsible: true,
-          items: [
-            {
-              text: "vscode",
-              link: "",
-            },
-            {
-              text: "项目配置",
-              link: "",
-            },
-          ],
         },
-        {
-          text: "pnpm",
-          link: "/engineering/pnpm",
-        },
-        {
-          text: "vite",
-          link: "/engineering/vite",
-        },
-        {
-          text: "bun",
-          link: "/engineering/bun",
-        },
-        {
-          text: "ski",
-          link: "/engineering/ski",
-        },
+        // {
+        //   text: "pnpm",
+        //   link: "/engineering/pnpm",
+        // },
+        // {
+        //   text: "vite",
+        //   link: "/engineering/vite",
+        // },
+        // {
+        //   text: "bun",
+        //   link: "/engineering/bun",
+        // },
+        // {
+        //   text: "ski",
+        //   link: "/engineering/ski",
+        // },
       ],
     },
   ],
@@ -63,26 +73,61 @@ export const sidebar = {
       ],
     },
   ],
+  "/viewBook/": [
+    {
+      text: "优秀书籍",
+      collapsible: true,
+      items: [
+        { text: "编程", link: "/viewBook/program" },
+        { text: "娱乐", link: "/viewBook/enjoying" },
+      ],
+    },
+    {
+      text: "最爱影音",
+      collapsible: true,
+      items: [
+        { text: "电影", link: "/viewBook/movie" },
+        { text: "电视剧", link: "/viewBook/tv" },
+      ],
+    },
+  ],
+  "/backend/": [
+    {
+      text: "node.js",
+      collapsible: true,
+      items: [{ text: "多线程", link: "/backend/nodejs" }],
+    },
+  ],
+  "/Algorithm/": [
+    {
+      text: "回溯",
+      collapsible: true,
+      items: [{ text: "算法", link: "/Algorithm/dfs" }],
+    },
+  ],
+  financial: [
+    {
+      text: "房地产",
+      collapsible: true,
+      items: [{ text: "日本房地产泡沫", link: "/financial/bubble" }],
+    },
+  ],
 };
 
 export default defineConfig({
   lang: "en-US",
   title: "TREEDOCS",
   description: "docs tree.",
-
   lastUpdated: true,
   cleanUrls: "without-subfolders",
   base: "/gitDocs/",
   themeConfig: {
     nav,
-
     sidebar,
-
     editLink: {
       pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
-
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
