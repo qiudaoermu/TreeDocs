@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as e}from"./app.5e968f5d.js";const D=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"viewBook/movie.md","lastUpdated":1663308388000}'),p={name:"viewBook/movie.md"},l=e("",1),o=[l];function t(c,r,i,_,A,C){return n(),a("div",null,o)}const m=s(p,[["render",t]]);export{D as __pageData,m as default};
