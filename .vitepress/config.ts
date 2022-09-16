@@ -4,33 +4,33 @@ const nav = [
   {
     text: "FrontEnd",
     activeMatch: `^/engineering/`,
-    link: "/engineering/stylelint",
+    link: "/engineering/stylelint"
   },
   {
     text: "BackEnd",
     activeMatch: `^/(backend)/`,
-    link: "/backend/nodejs",
+    link: "/backend/nodejs"
   },
   {
     text: "Algorithm",
     activeMatch: `^/Algorithm/`,
-    link: "/Algorithm/dfs",
+    link: "/Algorithm/dfs"
   },
   {
     text: "编程拾遗",
     activeMatch: `^/program/`,
-    link: "/program/Iterators",
+    link: "/program/Iterators"
   },
   {
     text: "最爱图影",
     activeMatch: `^/viewBook/`,
-    link: "/viewBook/program",
+    link: "/viewBook/program"
   },
   {
     text: "金融",
     activeMatch: `^/financial/`,
-    link: "/financial/bubble",
-  },
+    link: "/financial/bubble"
+  }
 ];
 export const sidebar = {
   "/engineering/": [
@@ -125,21 +125,21 @@ export default defineConfig({
   description: "docs tree.",
   lastUpdated: true,
   cleanUrls: "without-subfolders",
-  base: "/gitDocs/",
+  base: "/TreeDocs/",
   themeConfig: {
     nav,
     sidebar,
     editLink: {
       pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
-      text: "Edit this page on GitHub",
+      text: "Edit this page on GitHub"
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/vuejs/vitepress" }
     ],
     algolia: {
       appId: "8J64VVRP8K",
       apiKey: "a18e2f4cc5665f6602c5631fd868adfd",
-      indexName: "vitepress",
-    },
-  },
+      indexName: "vitepress"
+    }
+  }
 });
