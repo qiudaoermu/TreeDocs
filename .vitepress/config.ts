@@ -99,6 +99,11 @@ export const sidebar = {
         { text: "gcc编译", link: "/backend/gcc" },
         { text: "make工具", link: "/backend/make" }
       ]
+    },
+    {
+      text: "Clang",
+      collapsible: true,
+      items: [{ text: "llvm编译", link: "/backend/llvm" }]
     }
   ],
   "/Algorithm/": [
