@@ -9,10 +9,10 @@ const nav = [
   {
     text: "BackEnd",
     activeMatch: `^/(backend)/`,
-    link: "/backend/nodejs"
+    link: "/backend/make"
   },
   {
-    text: "Algorithm",
+    text: "数学",
     activeMatch: `^/Algorithm/`,
     link: "/Algorithm/dfs"
   },
@@ -22,7 +22,7 @@ const nav = [
     link: "/program/Iterators"
   },
   {
-    text: "最爱图影",
+    text: "思过崖",
     activeMatch: `^/viewBook/`,
     link: "/viewBook/program"
   },
@@ -93,14 +93,12 @@ export const sidebar = {
   ],
   "/backend/": [
     {
-      text: "c/c++",
+      text: "GNU",
       collapsible: true,
-      items: [{ text: "make编译", link: "/backend/make" }]
-    },
-    {
-      text: "node.js",
-      collapsible: true,
-      items: [{ text: "多线程", link: "/backend/nodejs" }]
+      items: [
+        { text: "gcc编译", link: "/backend/gcc" },
+        { text: "make工具", link: "/backend/make" }
+      ]
     }
   ],
   "/Algorithm/": [
