@@ -42,8 +42,8 @@ export const sidebar = {
         { text: "eslint", link: "/engineering/eslint" },
         {
           text: "prettier",
-          link: "/engineering/prettier",
-        },
+          link: "/engineering/prettier"
+        }
         // {
         //   text: "pnpm",
         //   link: "/engineering/pnpm",
@@ -60,8 +60,8 @@ export const sidebar = {
         //   text: "ski",
         //   link: "/engineering/ski",
         // },
-      ],
-    },
+      ]
+    }
   ],
   "/program/": [
     {
@@ -69,9 +69,9 @@ export const sidebar = {
       collapsible: true,
       items: [
         { text: "迭代器实现(Iterator)", link: "/program/Iterators" },
-        { text: "高阶函数(HOT)", link: "/program/hot" },
-      ],
-    },
+        { text: "高阶函数(HOT)", link: "/program/hot" }
+      ]
+    }
   ],
   "/viewBook/": [
     {
@@ -79,39 +79,44 @@ export const sidebar = {
       collapsible: true,
       items: [
         { text: "编程", link: "/viewBook/program" },
-        { text: "娱乐", link: "/viewBook/enjoying" },
-      ],
+        { text: "娱乐", link: "/viewBook/enjoying" }
+      ]
     },
     {
       text: "最爱影音",
       collapsible: true,
       items: [
         { text: "电影", link: "/viewBook/movie" },
-        { text: "电视剧", link: "/viewBook/tv" },
-      ],
-    },
+        { text: "电视剧", link: "/viewBook/tv" }
+      ]
+    }
   ],
   "/backend/": [
     {
+      text: "c/c++",
+      collapsible: true,
+      items: [{ text: "make编译", link: "/backend/make" }]
+    },
+    {
       text: "node.js",
       collapsible: true,
-      items: [{ text: "多线程", link: "/backend/nodejs" }],
-    },
+      items: [{ text: "多线程", link: "/backend/nodejs" }]
+    }
   ],
   "/Algorithm/": [
     {
       text: "回溯",
       collapsible: true,
-      items: [{ text: "算法", link: "/Algorithm/dfs" }],
-    },
+      items: [{ text: "算法", link: "/Algorithm/dfs" }]
+    }
   ],
   financial: [
     {
       text: "房地产",
       collapsible: true,
-      items: [{ text: "日本房地产泡沫", link: "/financial/bubble" }],
-    },
-  ],
+      items: [{ text: "日本房地产泡沫", link: "/financial/bubble" }]
+    }
+  ]
 };
 
 export default defineConfig({

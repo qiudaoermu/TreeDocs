@@ -2,9 +2,11 @@
 
 1.  vscode 安装 **prettier**
 2.  打开 vscode formatSave
+
 ```json
-"editor.formatOnSave": false
+"editor.formatOnSave": true
 ```
+
 3.  配置 vscode settings 默认 formatter
 
 ```json
