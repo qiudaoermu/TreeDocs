@@ -61,6 +61,11 @@ export const sidebar = {
         //   link: "/engineering/ski",
         // },
       ]
+    },
+    {
+      text: "移动端",
+      collapsible: true,
+      items: [{ text: "rem适配", link: "/engineering/rem" }]
     }
   ],
   "/program/": [
