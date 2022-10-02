@@ -3,8 +3,8 @@ import { version } from "../package.json";
 const nav = [
   {
     text: "FrontEnd",
-    activeMatch: `^/engineering/`,
-    link: "/engineering/stylelint"
+    activeMatch: `^/frontEnd/`,
+    link: "/frontEnd/stylelint"
   },
   {
     text: "BackEnd",
@@ -15,6 +15,11 @@ const nav = [
     text: "数学",
     activeMatch: `^/Algorithm/`,
     link: "/Algorithm/dfs"
+  },
+  {
+    text: "工程学",
+    activeMatch: `^/engineeing/`,
+    link: "/engineeing/introduce"
   },
   {
     text: "编程拾遗",
@@ -33,39 +38,39 @@ const nav = [
   }
 ];
 export const sidebar = {
-  "/engineering/": [
+  "/frontEnd/": [
     {
       text: "前端工程化",
       collapsible: true,
       items: [
-        { text: "stylelint", link: "/engineering/stylelint" },
-        { text: "eslint", link: "/engineering/eslint" },
+        { text: "stylelint", link: "/frontEnd/stylelint" },
+        { text: "eslint", link: "/frontEnd/eslint" },
         {
           text: "prettier",
-          link: "/engineering/prettier"
+          link: "/frontEnd/prettier"
         }
         // {
         //   text: "pnpm",
-        //   link: "/engineering/pnpm",
+        //   link: "/frontEnd/pnpm",
         // },
         // {
         //   text: "vite",
-        //   link: "/engineering/vite",
+        //   link: "/frontEnd/vite",
         // },
         // {
         //   text: "bun",
-        //   link: "/engineering/bun",
+        //   link: "/frontEnd/bun",
         // },
         // {
         //   text: "ski",
-        //   link: "/engineering/ski",
+        //   link: "/frontEnd/ski",
         // },
       ]
     },
     {
       text: "移动端",
       collapsible: true,
-      items: [{ text: "rem适配", link: "/engineering/rem" }]
+      items: [{ text: "rem适配", link: "/frontEnd/rem" }]
     }
   ],
   "/program/": [
@@ -116,6 +121,13 @@ export const sidebar = {
       text: "回溯",
       collapsible: true,
       items: [{ text: "算法", link: "/Algorithm/dfs" }]
+    }
+  ],
+  "/engineeing/": [
+    {
+      text: "工程学",
+      collapsible: true,
+      items: [{ text: "工程学简介", link: "/engineeing/introduce" }]
     }
   ],
   financial: [
