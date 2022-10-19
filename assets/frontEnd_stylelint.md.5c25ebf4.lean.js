@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as o}from"./app.67c4d408.js";const u=JSON.parse('{"title":"Stylelint","description":"","frontmatter":{},"headers":[],"relativePath":"frontEnd/stylelint.md","lastUpdated":1666157275000}'),l={name:"frontEnd/stylelint.md"},p=o("",6),e=[p];function t(D,c,F,r,y,C){return a(),n("div",null,e)}const i=s(l,[["render",t]]);export{u as __pageData,i as default};
