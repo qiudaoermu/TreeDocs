@@ -127,7 +127,10 @@ export const sidebar = {
     {
       text: "工程学",
       collapsible: true,
-      items: [{ text: "工程学分类", link: "/engineeing/introduce" }]
+      items: [
+        { text: "工程学分类", link: "/engineeing/introduce" },
+        { text: "系统工程学", link: "/engineeing/system" }
+      ]
     }
   ],
   financial: [
