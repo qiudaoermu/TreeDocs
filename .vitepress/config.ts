@@ -32,7 +32,7 @@ const nav = [
     link: "/viewBook/program"
   },
   {
-    text: "金融",
+    text: "哲学",
     activeMatch: `^/financial/`,
     link: "/financial/bubble"
   }
@@ -138,6 +138,11 @@ export const sidebar = {
       text: "房地产",
       collapsible: true,
       items: [{ text: "日本房地产泡沫", link: "/financial/bubble" }]
+    },
+    {
+      text: "科技漫谈",
+      collapsible: true,
+      items: [{ text: "中美科技差距", link: "/financial/distance" }]
     }
   ]
 };
