@@ -15,7 +15,6 @@ jobs:
           version: latest
       - name: Install and Build
         run: |
-          pnpm install --frozen-lockfile
           npm run build
 
       - name: Deploy
