@@ -13,7 +13,7 @@ jobs:
       - name: Install and Build
         run: |
           npm i -g pnpm
-          pnpm install
+          pnpm install --frozen-lockfile
           npm run build
 
       - name: Deploy
