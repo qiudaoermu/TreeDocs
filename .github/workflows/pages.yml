@@ -12,7 +12,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 7
       - name: Install and Build
         run: |
           pnpm install
