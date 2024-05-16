@@ -1,5 +1,5 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": false //关闭vscode 自动修复功能
+    "source.fixAll": "never"
   }
 }
